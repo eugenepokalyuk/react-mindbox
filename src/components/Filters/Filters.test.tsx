@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Task } from '../../types';
+import { Task } from '../../types/types';
 import Filters from './Filters';
 
 const tasks: Task[] = [

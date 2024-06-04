@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Task } from '../../types';
+import { Task } from '../../types/types';
 import TaskList from './TaskList';
 
 const tasks: Task[] = [

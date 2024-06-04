@@ -1,46 +1,108 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ToDo Application
 
-## Available Scripts
+This project is a React application that provides a ToDo list where users can manage their tasks. The application is built using React, TypeScript, Tailwind CSS, and localStorage for persistent data storage.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Task Management**:
+  - Users can add new tasks.
+  - Tasks can be marked as completed or active.
+  - Tasks can be deleted.
+  - Completed tasks can be cleared in bulk.
+- **Task Filters**:
+  - Users can filter tasks to show all, active, or completed tasks.
+- **Responsive Design**:
+  - The application adapts to different screen sizes and resolutions, including mobile and tablet devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- TypeScript
+- Tailwind CSS
 
-### `npm test`
+<img src="https://skillicons.dev/icons?i=react,ts,tailwind" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy up and running, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js and npm installed on your machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository**:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   git clone https://github.com/eugenepokalyuk/react-mindbox.git
+   cd mindbox
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install dependencies**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```bash
+   npm install
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. **Start the development server**:
 
-## Learn More
+   ```bash
+   npm run start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Open the application**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Open your browser and navigate to `http://localhost:3000`.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── App/
+│   │   ├── App.test.tsx
+│   │   └── App.tsx
+│   ├── TaskInput/
+│   │   ├── TaskInput.test.tsx
+│   │   └── TaskInput.tsx
+│   ├── TaskList/
+│   │   ├── TaskList.test.tsx
+│   │   └── TaskList.tsx
+│   ├── TaskItem/
+│   │   ├── TaskItem.test.tsx
+│   │   └── TaskItem.tsx
+│   ├── Filters/
+│   │   ├── Filters.test.tsx
+│   │   └── Filters.tsx
+├── types/
+│   └── types.ts
+├── index.tsx
+├── styles.css
+```
+
+### Explanation of Key Files
+
+- **`src/components/App/App.tsx`**: The main component that holds the state and renders the application.
+- **`src/components/TaskInput/TaskInput.tsx`**: Component for adding new tasks.
+- **`src/components/TaskList/TaskList.tsx`**: Component for displaying the list of tasks.
+- **`src/components/TaskItem/TaskItem.tsx`**: Component for individual task items.
+- **`src/components/Filters/Filters.tsx`**: Component for filtering tasks.
+- **`src/types/types.ts`**: Type definitions for the application.
+
+## Comments
+
+- The application uses localStorage to persist tasks between page reloads.
+- Tailwind CSS is used for styling the application, ensuring a responsive and clean design.
+- The application is designed to provide a smooth user experience with real-time updates.
+
+## Deployment
+
+To build the application for production, run:
+
+```bash
+npm run build
+```
+
+The built files will be in the `build` directory, which can be deployed to any static hosting service.

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Filters from './components/Filters/Filters';
-import TaskInput from './components/TaskInput/TaskInput';
-import TaskList from './components/TaskList/TaskList';
-import { Task } from './types';
+import { Task } from '../../types/types';
+import Filters from '../Filters/Filters';
+import TaskInput from '../TaskInput/TaskInput';
+import TaskList from '../TaskList/TaskList';
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);

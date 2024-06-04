@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { Task } from '../../types';
+import { Task } from '../../types/types';
 import TaskItem from './TaskItem';
 
 const task: Task = { id: '1', title: 'Task 1', completed: false };
