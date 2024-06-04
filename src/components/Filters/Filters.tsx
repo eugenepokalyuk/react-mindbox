@@ -12,7 +12,7 @@ const Filters: React.FC<FiltersProps> = ({ filter, setFilter, clearCompletedTask
     const activeTasksCount = tasks.filter(task => !task.completed).length;
 
     return (
-        <div className="flex flex-col sm:flex-row items-center justify-between p-4 bg-gray-100 border-t space-y-2 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row items-center justify-between p-4 bg-gray-100 border-t space-y-2 sm:space-y-0 text-xs">
             <span>{`${activeTasksCount} items left`}</span>
             <div className="flex space-x-4">
                 <button
